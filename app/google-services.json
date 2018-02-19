@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "400757227536",
+    "firebase_url": "https://oilcollection-e9ee6.firebaseio.com",
+    "project_id": "oilcollection-e9ee6",
+    "storage_bucket": "oilcollection-e9ee6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400757227536:android:7874e0c410ed3f42",
+        "android_client_info": {
+          "package_name": "android.cs.aui.oilcollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400757227536-nuabt1tp5vcbls2vej8o02mrq50iprmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.cs.aui.oilcollection",
+            "certificate_hash": "28a3bb50b1dfb1ba6b1a722e380c71d462105325"
+          }
+        },
+        {
+          "client_id": "400757227536-aelqgghpmbq8mlfejrk3dvf60d56d2j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.cs.aui.oilcollection",
+            "certificate_hash": "fb2a1a83e5fa7042aec3699b510e4910bc6f4573"
+          }
+        },
+        {
+          "client_id": "400757227536-6gh80r0u1t8httmarndl0mq09f5uj0ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5fBhixVlclcpwCd6FhvhxcmVzOePfT8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400757227536-6gh80r0u1t8httmarndl0mq09f5uj0ms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

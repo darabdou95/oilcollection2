@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".statActivity">
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="371dp"/>
+
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="37dp"/>
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="shop name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="81dp"/>
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Search"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="185dp"/>
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mySpinner"
+        android:layout_below="@+id/mySpinner"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="number"
+        android:textSize="10sp"/>
+
+    <EditText
+        android:id="@+id/yearText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yearText"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Month"
+        android:inputType="number"
+        android:textSize="10sp"/>
+
+    <EditText
+        android:id="@+id/yearText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yearText2"
+        android:layout_alignBottom="@+id/yearText2"
+        android:layout_alignEnd="@+id/mySpinner"
+        android:ems="10"
+        android:hint="Day"
+        android:inputType="none|number"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/yearText"
+        android:layout_alignTop="@+id/totalText"
+        android:text="Number of results"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:text="shops/dates : "
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/searchText"
+        android:layout_alignStart="@+id/searchText"
+        android:layout_below="@+id/textView2">
+
+        <TextView
+            android:id="@+id/mySearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

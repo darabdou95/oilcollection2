@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myListC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Collector">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:context=".Collector" />
+
+    <ListView
+        android:id="@+id/listList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/colectorBtn"
+        android:layout_below="@+id/map"
+        android:layout_margin="15dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:id="@+id/colectorBtn"
+        android:layout_width="180dp"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/button_shape"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:text="Collect" />
+
+</RelativeLayout>

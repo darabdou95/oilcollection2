@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="90dp"
+    android:orientation="vertical"
+    tools:context="android.cs.aui.oilcollection.collectorActivity">
+
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editphone"
+        android:layout_alignBottom="@+id/editphone"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Add collector"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Phone"
+            android:layout_alignLeft="@+id/Phone"
+            android:layout_alignStart="@+id/Phone"
+            android:text="Full Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Name"
+            android:layout_alignBottom="@+id/Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:inputType="text|textCapSentences|textEmailAddress|textEmailSubject|textLongMessage|textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editaddress"
+            android:layout_alignBottom="@+id/editaddress"
+            android:layout_alignLeft="@+id/Address"
+            android:layout_alignStart="@+id/Address"
+            android:text="Phone"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editpass"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editphone"
+            android:layout_alignBottom="@+id/editphone"
+            android:layout_alignLeft="@+id/Password"
+            android:layout_alignStart="@+id/Password"
+            android:text="Address"
+            android:textSize="18sp"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/editaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
+            android:inputType="text" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/collectorcreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Add" />
+
+
+</TableLayout>
