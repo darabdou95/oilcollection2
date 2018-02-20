@@ -37,8 +37,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/ic_magnify"
             android:background="@null"
-            android:paddingLeft="3dp
-"
+            android:paddingLeft="3dp"
             android:hint="Enter Address, City or Zip Code"
             android:imeOptions="actionSearch"
             android:maxLines="1"
@@ -57,6 +56,7 @@
         android:layout_alignRight="@+id/relLayout1"
         android:layout_alignTop="@+id/place_picker"
         android:scaleType="centerCrop"
+        android:tint="@color/colorPrimary"
         android:src="@drawable/ic_gps" />
 
     <ImageView
@@ -66,6 +66,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:scaleType="centerCrop"
+        android:tint="@color/colorPrimary"
         android:layout_below="@+id/relLayout1"
         android:src="@drawable/ic_map"/>
 
@@ -73,12 +74,11 @@
 
     <Button
         android:id="@+id/Save"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
+        android:layout_margin="10dp"
+        android:text="Save"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:text="Save" />
+        style="@style/mybutton_style"/>
 
 
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,212 +7,189 @@
     android:orientation="vertical"
     tools:context="android.cs.aui.oilcollection.AddLocation">
 
-
-    <TableRow
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </TableRow>
-
-    <TextView
-        android:id="@+id/Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editphone"
-        android:layout_alignBottom="@+id/editphone"
-        android:layout_alignLeft="@+id/Password"
-        android:layout_alignStart="@+id/Password"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="monospace"
-        android:text="Add Location"
-        android:textAlignment="center"
-        android:textSize="24sp" />
-
-    <TableRow
-        android:id="@+id/row1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/Phone"
-            android:layout_alignLeft="@+id/Phone"
-            android:layout_alignStart="@+id/Phone"
-            android:text="Name"
-            android:inputType="textCapSentences"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editname"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/Name"
-            android:layout_alignBottom="@+id/Name"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="32dp"
-            android:capitalize="sentences"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textAllCaps="false" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/Phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editaddress"
-            android:layout_alignBottom="@+id/editaddress"
-            android:layout_alignLeft="@+id/Address"
-            android:layout_alignStart="@+id/Address"
-            android:text="Phone"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editphone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/editpass"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:inputType="phone" />
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/Password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editpass"
-            android:layout_alignBottom="@+id/editpass"
-            android:layout_toLeftOf="@+id/editpass"
-            android:layout_toStartOf="@+id/editpass"
-            android:text="Password"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editpass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/shopcreate"
-            android:layout_alignLeft="@+id/editphone"
-            android:layout_alignStart="@+id/editphone"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:inputType="textPassword" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/confirmPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editpass"
-            android:layout_alignBottom="@+id/editpass"
-            android:layout_toLeftOf="@+id/editpass"
-            android:layout_toStartOf="@+id/editpass"
-            android:text="Confirm Password"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editconfpass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/shopcreate"
-            android:layout_alignLeft="@+id/editphone"
-            android:layout_alignStart="@+id/editphone"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:inputType="textPassword" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/confirmPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editpass"
-            android:layout_alignBottom="@+id/editpass"
-            android:layout_toLeftOf="@+id/editpass"
-            android:layout_toStartOf="@+id/editpass"
-            android:text="Number of Barrels"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/barel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/shopcreate"
-            android:layout_alignLeft="@+id/editphone"
-            android:layout_alignStart="@+id/editphone"
-            android:layout_marginBottom="32dp"
-            android:ems="10"
-            android:inputType="number" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row6"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
 
         <TextView
             android:id="@+id/Address"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignBaseline="@+id/editphone"
             android:layout_alignBottom="@+id/editphone"
             android:layout_alignLeft="@+id/Password"
             android:layout_alignStart="@+id/Password"
-            android:text="Address"
-            android:textSize="18sp"
-            tools:ignore="DuplicateIds" />
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Add Location"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
 
-        <EditText
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Name"
+            android:layout_alignBottom="@+id/Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_store_black_24dp"
+            android:ems="10"
+            android:hint="Shopname"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editpass"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Phonenumber"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopcreate"
+            android:layout_alignLeft="@+id/editphone"
+            android:layout_alignStart="@+id/editphone"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editconfpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopcreate"
+            android:layout_alignLeft="@+id/editphone"
+            android:layout_alignStart="@+id/editphone"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/barel"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopcreate"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_small_barrel"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Number of Barrels"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/editaddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="0dp"
             android:clickable="true"
             android:editable="false"
             android:focusable="false"
             android:fontFamily="sans-serif"
+            android:hint="Click to set the address"
             android:inputType="none"
             android:onClick="onClick" />
+    </android.support.design.widget.TextInputLayout>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:tint="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_marker"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:onClick="onClick"
 
-    </TableRow>
-
+        />
+</LinearLayout>
     <Button
         android:id="@+id/shopcreate"
+        style="@style/mybutton_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
-        android:text="Add" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Add"
+        android:textSize="18sp" />
 
 
-</TableLayout>
+</LinearLayout>

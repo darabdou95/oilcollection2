@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cfea84"
+    android:background="#F5F5F6"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:weightSum="2"
     android:scrollbarAlwaysDrawVerticalTrack="true">
-
-    <TextView
-        android:id="@+id/login_title"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
-        android:gravity="center_horizontal"
-        android:text="Account Login"
-        android:textColor="#1d5111"
-        android:textSize="26sp"
-        android:textStyle="bold" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logobio" />
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView"
+        android:layout_height="0dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#fff"
+        android:background="#F5F5F6"
+        android:layout_weight="1.8"
+
+        android:layout_below="@+id/user_profile_photo"
         android:elevation="4dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -37,84 +35,53 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="30dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <EditText
                     android:id="@+id/nameText"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableTint="#FF4081"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
                     android:hint="Username"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                    android:paddingLeft="15dp"
+                    android:drawablePadding="2dp"
+                    android:background="@drawable/input_shape"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
                     android:singleLine="true" />
-            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/passText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:drawableTint="@color/cast_expanded_controller_background_color"
-                    android:hint="Password"
-                    android:imeOptions="actionDone"
-                    android:inputType="textPassword"
-                    android:maxHeight="12dp"
-                    android:maxWidth="12dp"
-                    android:scaleType="fitXY"
-                    android:singleLine="true" />
-            </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/passText"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="2dp"
+                android:hint="Password"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:background="@drawable/input_shape"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true" />
 
 
             <Button
                 android:id="@+id/loginBtn"
-                android:layout_width="fill_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:background="#328440"
-                android:text="Sign in"
+                android:text="Login"
+                style="@style/mybutton_style"
                 android:textAllCaps="false"
-                android:textColor="#fff"
                 android:textSize="18sp" />
         </LinearLayout>
     </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/user_profile_photo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_above="@+id/relativeLayout4"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/logobio"
-        android:elevation="4dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        app:srcCompat="@drawable/aui" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:srcCompat="@drawable/fes" />
-</RelativeLayout>
+</LinearLayout>
