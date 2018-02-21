@@ -29,7 +29,7 @@ public class first extends AppCompatActivity {
                     startActivity(new Intent(first.this, MainActivity.class));
                 }
             }
-        }, 3000);
+        }, 1500);
     }
 
     @Override
