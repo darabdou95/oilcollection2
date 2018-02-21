@@ -48,7 +48,7 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
     private GoogleMap googleMap;
     private MapFragment mapFragment;
     private double longitude,latitude;
-    private boolean clicked = false;
+    private boolean clicked;
 
 
 
@@ -59,6 +59,7 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collector);
         users = new ArrayList<Shop>();
+        clicked = false;
         final SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
        mapFragment.getMapAsync(this);
         myListView =  findViewById(R.id.listList);
@@ -76,7 +77,7 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
                 googleMap.clear();
                 for(int a = 0; a < parent.getChildCount(); a++)
                 {
-                    ( (CardView)parent.getChildAt(a).findViewById(R.id.collections)).setCardBackgroundColor(Color.WHITE);
+                    ((CardView)parent.getChildAt(a).findViewById(R.id.collections)).setCardBackgroundColor(Color.WHITE);
 
                     longitude = users.get(position).getLongitude();
                     latitude = users.get(position).getLatitude();
@@ -150,6 +151,7 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
     public void onClick(View v) {
         if (!clicked){
             Utiles.dialogWithOneButton(this, "Please select a collection");
+            return;
         }
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Are you sure you want to collect it")
@@ -175,7 +177,7 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
                 });
         AlertDialog alert = builder.create();
         alert.show();
-
+        this.clicked = false;
 
     }
 

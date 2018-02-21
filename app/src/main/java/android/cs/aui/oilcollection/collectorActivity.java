@@ -27,7 +27,6 @@ public class collectorActivity extends Activity implements View.OnClickListener 
         setContentView(R.layout.activity_collector2);
         databasecollectors = FirebaseDatabase.getInstance().getReference("collectorinfo");
         name = findViewById(R.id.editname);
-        name.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         phone = findViewById(R.id.editphone);
         address = findViewById(R.id.editaddress);
         create = findViewById(R.id.collectorcreate);

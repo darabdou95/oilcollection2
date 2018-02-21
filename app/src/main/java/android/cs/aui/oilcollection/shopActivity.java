@@ -8,13 +8,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class shopActivity extends AppCompatActivity implements View.OnClickListener {
     private Shop us;
-    private Button fullBtn,end;
+    private ImageButton fullBtn;
+    private Button end;
     private Shop s = null;
 
     @Override
@@ -24,7 +26,6 @@ public class shopActivity extends AppCompatActivity implements View.OnClickListe
         Intent i = getIntent();
         us = (Shop) i.getSerializableExtra("user");
         fullBtn = findViewById(R.id.fullBtn);
-        fullBtn.setBackground(getDrawable(R.drawable.full));
         fullBtn.setOnClickListener(this);
         end =findViewById(R.id.end);
         end.setOnClickListener(this);
@@ -90,7 +91,8 @@ public class shopActivity extends AppCompatActivity implements View.OnClickListe
                             databaseUser = FirebaseDatabase.getInstance().getReference("shop");
                             us.setPending(true);
                             databaseUser.child(us.getId()).setValue(us);
-                            fullBtn.setBackground(getDrawable(R.drawable.empty));
+                            fullBtn.setImageDrawable(getDrawable(R.drawable.empty));
+                            //fullBtn.setBackground(getDrawable(R.drawable.empty));
                             AlertDialog.Builder builder = new AlertDialog.Builder(shopActivity.this);
                             builder.setMessage("شكرا لإخبارنا سوف يتم تفريغ البرميل في أقرب الآجال")
                                     .setCancelable(true);
