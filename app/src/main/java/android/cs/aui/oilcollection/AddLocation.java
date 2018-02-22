@@ -44,6 +44,7 @@ public class AddLocation extends Activity implements View.OnClickListener {
 
     private void addShop() {
         NAME = name.getText().toString();
+        NAME = NAME.toLowerCase();
         PHONE = phone.getText().toString();
         PASSWORD = password.getText().toString();
         BAREL = Integer.parseInt(barrels.getText().toString());
@@ -80,11 +81,11 @@ public class AddLocation extends Activity implements View.OnClickListener {
                 confirmpassword.requestFocus();
                 return;
             }
-            if (PASSWORD.length()<6) {
-                password.setError("Password too short ( minimum 6 characters)");
-                password.requestFocus();
-                return;
-            }
+        /*if (PASSWORD.length()<6) {
+            password.setError("Password too short ( minimum 6 characters)");
+            password.requestFocus();
+            return;
+        }*/
 
             if (BAREL<1){
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(AddLocation.this);

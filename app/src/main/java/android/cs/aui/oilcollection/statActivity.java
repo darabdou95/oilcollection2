@@ -142,7 +142,7 @@ public class statActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             default:
-                query = reference.child("collection").orderByChild("name").equalTo(searchText.getText().toString());
+                query = reference.child("collection").orderByChild("name").equalTo(searchText.getText().toString().toLowerCase());
 
                 break;
 

@@ -123,7 +123,6 @@ public class Collector extends AppCompatActivity implements View.OnClickListener
                 } else {
                     Log.e("myError", "no pendings");
                     Toast.makeText(Collector.this, "No pendings", Toast.LENGTH_SHORT).show();
-                    Collector.this.finish();
                 }
                 /////////use thus user here/////////////
                 ///// us.getLatitude

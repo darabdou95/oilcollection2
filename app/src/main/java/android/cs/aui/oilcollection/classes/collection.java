@@ -18,7 +18,7 @@ public class collection {
         this.year = date.get(Calendar.YEAR);
         this.month = date.get(Calendar.YEAR)+"-"+date.get(Calendar.MONTH);
         this.month = this.month + 1;
-        this.day=date.get(Calendar.YEAR)+"-"+this.month+"-"+date.get(Calendar.DAY_OF_MONTH);
+        this.day=this.month+"-"+date.get(Calendar.DAY_OF_MONTH);
         this.name = name;
         this.us = us;
     }

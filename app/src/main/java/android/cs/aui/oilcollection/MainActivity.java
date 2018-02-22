@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         String name = nameText.getText().toString();
-
+        name = name.toLowerCase();
         final String pass = passText.getText().toString();
         if(name.isEmpty() || pass.isEmpty()){
             return;
