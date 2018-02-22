@@ -6,6 +6,7 @@ import android.cs.aui.oilcollection.classes.Shop;
 import android.cs.aui.oilcollection.classes.Utiles;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loginBtn = findViewById(R.id.loginBtn);
         loginBtn.setOnClickListener(this);
         nameText = findViewById(R.id.nameText);
+        nameText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         passText = findViewById(R.id.passText);
         databaseUser =  FirebaseDatabase.getInstance().getReference("user");
         passText.setOnEditorActionListener(new EditText.OnEditorActionListener() {
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         String name = nameText.getText().toString();
+
         final String pass = passText.getText().toString();
         if(name.isEmpty() || pass.isEmpty()){
             return;
